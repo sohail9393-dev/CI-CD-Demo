@@ -1,0 +1,17 @@
+name: My CICD pipeline in Github Actions
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: my first step
+        run: |
+          echo "this is sohail pathan"
+          uname -a
